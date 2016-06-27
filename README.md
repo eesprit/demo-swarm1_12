@@ -19,6 +19,7 @@ Then :
 ```
 $ docker service create ...
 $ docker service create ...
+TODO
 ```
 
 Access the service by pointing your browser to the port 8080 of one of your swarm node

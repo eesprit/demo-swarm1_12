@@ -19,10 +19,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
                             php5-mysql && \
          rm -rf /var/lib/apt/lists/*
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
-         apt-get -y install git && \
-         rm -rf /var/lib/apt/lists/*
-
 EXPOSE 80
 
 CMD ["/bin/bash", "-c", "source /etc/apache2/envvars && rm -f $APACHE_PID_FILE && exec /usr/sbin/apache2 -DFOREGROUND"]
